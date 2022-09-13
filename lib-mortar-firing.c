@@ -7,7 +7,7 @@ DLLIMPORT double angle_parabola_mortar(double a, double b) {
 	
 	double c = a * 10 / pow(b, 2);
 	double d = asin(c); //rad
-	double e = 90 - (((180 / M_PI) * d) / 2); //convert to degree
+	int e = 90 - (((180 / M_PI) * d) / 2); //convert to degree
 	
 	return e; //return degree value
 }
